@@ -69,7 +69,7 @@ class GWM_Remover {
             .gwm-footer-credits a { color: #2271b1; text-decoration: none; }
             .gwm-footer-credits a:hover { text-decoration: underline; }
         ";
-        wp_register_style('gwm-remover-css', false);
+        wp_register_style('gwm-remover-css', false, array(), '1.2.3');
         wp_enqueue_style('gwm-remover-css');
         wp_add_inline_style('gwm-remover-css', $custom_css);
     }
@@ -128,9 +128,13 @@ class GWM_Remover {
                 </div>
             </div>
 
-            <div class="gwm-footer-credits">
-                &copy; <?php echo date('Y'); ?> <a href="https://blake-hofer.net" target="_blank" rel="noopener">Dominique Blake-Hofer (blake-hofer.net)</a>. All rights reserved. This module is free software, licensed under the terms of the GPLv2.
-            </div>
+<div class="gwm-footer-credits">
+    &copy; <?php echo esc_html( gmdate( 'Y' ) ); ?>
+    <a href="https://blake-hofer.net" target="_blank" rel="noopener noreferrer">
+        Dominique Blake-Hofer (blake-hofer.net)
+    </a>.
+    All rights reserved. This module is free software, licensed under the terms of the GPLv2.
+</div>
         </div>
 
         <script>

@@ -9,6 +9,9 @@
 
 A lightweight, privacy-first WordPress plugin for blog operators to securely remove Gemini watermarks from AI-generated images using exact reverse alpha blending.
 
+### Plugin Teaser
+![GWM Remover Teaser](GWM-Remover-Teaser.png)
+
 ## Description
 
 **GWM Remover** is built specifically for blog operators and content creators who use Google Gemini to generate images but need a clean, unbranded look for their articles. 
@@ -45,6 +48,9 @@ There are two ways to install this plugin: via the official ZIP release (recomme
 4. Upload the entire `gwm-remover` folder via FTP/SFTP to your `/wp-content/plugins/` directory.
 5. Ensure the `mask.png` file is located inside this folder.
 6. Go to the **Plugins** screen in your WordPress dashboard and click **Activate** under "GWM Remover".
+
+### Plugin Interface
+![GWM Remover Screenshot](screenshot.png)
 
 ## Usage
 
